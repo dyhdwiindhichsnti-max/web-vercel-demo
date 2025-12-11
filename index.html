@@ -4,10 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hello Vercel</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #4a90e2, #9013fe);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+
+    a {
+      text-decoration: none;
+      background: white;
+      padding: 12px 25px;
+      color: #9013fe;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Halo, ini web sederhana di VS Code!</h1>
-  <p>Halaman utama siap untuk di-deploy ke Vercel.</p>
-  <a href="/hello.html">Pergi ke halaman /hello</a>
+  <div class="card">
+    <h1>Halo, ini web sederhana di VS Code!</h1>
+    <p>Halaman utama siap untuk di-deploy ke Vercel.</p>
+    <a href="/hello.html">Pergi ke halaman /hello</a>
+  </div>
 </body>
 </html>
